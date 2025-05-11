@@ -1,0 +1,127 @@
+/* styles.css - Feliz Dia das Mães */
+
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fef7f6;
+  color: #4a2f2f;
+}
+
+.banner-principal {
+  background: linear-gradient(to right, #bf8c7f, #fbdcd7);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.banner-principal h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.banner-principal span {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.botao {
+  background-color: #bf8c7f;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  background-color: #f9e6e0;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card.destaque {
+  background-color: #d7a397;
+  color: white;
+}
+
+.card.destaque .desconto {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.card.destaque .link {
+  background-color: #4a2f2f;
+  color: white;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.card.imagem-texto img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.card.imagem-texto span {
+  font-style: italic;
+  font-size: 1.1em;
+  color: #a1645c;
+}
+
+.card.produto strong {
+  font-size: 1.5em;
+  color: #4a2f2f;
+  display: block;
+  margin-top: 8px;
+}
+
+.card.promocao strong {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 1.3em;
+}
+
+.card.promocao .desconto {
+  display: block;
+  background-color: #bf8c7f;
+  color: white;
+  font-weight: bold;
+  padding: 8px;
+  margin: 12px 0;
+  border-radius: 6px;
+}
+
+.card.comparacao .comparacao-opcoes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.card.comparacao span {
+  background-color: #f3c6bc;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .banner-principal h1 {
+    font-size: 1.8em;
+  }
+  .cards {
+    padding: 20px;
+  }
+}
