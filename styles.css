@@ -125,3 +125,16 @@ body {
     padding: 20px;
   }                                                                
 }
+
+.link-musica {
+  display: inline-block;
+  margin-top: 12px;
+  text-decoration: none;
+  color: #bf8c7f;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.link-musica:hover {
+  color: #bf8c7f;
+}
